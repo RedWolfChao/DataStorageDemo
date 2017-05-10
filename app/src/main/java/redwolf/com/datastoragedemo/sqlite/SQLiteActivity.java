@@ -1,6 +1,8 @@
 package redwolf.com.datastoragedemo.sqlite;
 
 import android.content.ContentValues;
+import android.content.Context;
+import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
@@ -11,13 +13,18 @@ import android.widget.Toast;
 
 import redwolf.com.datastoragedemo.R;
 
-public class MainActivity extends AppCompatActivity {
+public class SQLiteActivity extends AppCompatActivity {
     private Button btnInsertSQL;
     private Button btnUpdateSQL;
     private Button btnDeleteSQL;
     private Button btnRetrieveSQL;
 
     private MyOpenHelper mMyOpenHelper;
+
+    public static void actionStart(Context context){
+        Intent intent = new Intent(context,SQLiteActivity.class);
+        context.startActivity(intent);
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

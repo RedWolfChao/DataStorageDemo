@@ -6,11 +6,18 @@
 
     <Button
         android:id="@+id/SQLite"
+        android:text="SQLite"
+        android:textAllCaps="false"
+        android:textSize="40sp"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1" />
 
     <Button
+        android:id="@+id/LitePal"
+        android:textAllCaps="false"
+        android:textSize="40sp"
+        android:text="LitePal"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1" />
